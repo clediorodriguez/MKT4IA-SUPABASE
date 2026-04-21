@@ -1,11 +1,42 @@
-<div align="center">
+# MKT4IA Designer
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Agência de Marketing Óptico com Inteligência Artificial. Direção Criativa, Design, Vídeo e Copywriting 24/7.
 
-  <h1>Built with AI Studio</h2>
+## Tecnologias (Stack)
+- **Frontend**: React 19, TypeScript, Vite 6
+- **Estilização**: Tailwind CSS v4 (@tailwindcss/postcss)
+- **Backend/Auth/DB**: Supabase
+- **Inteligência Artificial**: Google Gemini API (@google/genai)
+- **Animações/Física**: Matter.js
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Como executar localmente
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+1. **Clone este repositório:**
+   \`\`\`bash
+   git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
+   cd SEU-REPOSITORIO
+   \`\`\`
 
-</div>
+2. **Instale as dependências:**
+   \`\`\`bash
+   npm install
+   \`\`\`
+
+3. **Configure as Variáveis de Ambiente:**
+   Copie o arquivo de exemplo e preencha as chaves da API (Gemini e Supabase):
+   \`\`\`bash
+   cp .env.example .env.local
+   \`\`\`
+
+4. **Inicie o servidor de desenvolvimento:**
+   \`\`\`bash
+   npm run dev
+   \`\`\`
+   O aplicativo estará disponível em \`http://localhost:3000\` ou na porta padrão do Vite.
+
+## Build para Produção
+Para criar a versão otimizada de produção, execute:
+\`\`\`bash
+npm run build
+\`\`\`
+A pasta \`dist/\` será gerada com os arquivos estáticos prontos para implantação (Vercel, Netlify, Cloudflare Pages, etc.).
